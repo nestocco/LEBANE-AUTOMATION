@@ -1,0 +1,20 @@
+{
+  "name": "lebane-qa-automation",
+  "version": "1.0.0",
+  "description": "QA Automation tests for Lebane price list functionality using Playwright",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:auth": "playwright test tests/auth/",
+    "test:price-list": "playwright test tests/price-list/",
+    "test:e2e": "playwright test tests/e2e/"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "dotenv": "^16.0.0"
+  }
+}
